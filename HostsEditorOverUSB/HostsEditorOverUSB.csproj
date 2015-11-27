@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D25ABE1-F5BC-4C77-8FDE-949F0E885149}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HostsEditorOverUSB</RootNamespace>
+    <AssemblyName>HostsEditorOverUSB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>apple.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Language\Language.cs" />
+    <Compile Include="Language\LanguageManager.cs" />
+    <Compile Include="Helpers\FileWriteCode.cs" />
+    <Compile Include="UI\HostsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HostsForm.Designer.cs">
+      <DependentUpon>HostsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\iPhoneFileHelper.cs" />
+    <Compile Include="UI\LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MobileDevice\AMDevice.cs" />
+    <Compile Include="MobileDevice\AMDeviceNotification.cs" />
+    <Compile Include="MobileDevice\AMDeviceNotificationCallbackInfo.cs" />
+    <Compile Include="MobileDevice\AMRecoveryDevice.cs" />
+    <Compile Include="MobileDevice\ConnectEventArgs.cs" />
+    <Compile Include="MobileDevice\ConnectEventHandler.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFArray.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFBoolean.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFData.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFDictionary.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFIndex.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFLibrary.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFNumber.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFPropertyList.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFRange.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFString.cs" />
+    <Compile Include="MobileDevice\CoreFoundation\CFType.cs" />
+    <Compile Include="MobileDevice\DeviceInstallApplicationCallback.cs" />
+    <Compile Include="MobileDevice\DeviceNotificationCallback.cs" />
+    <Compile Include="MobileDevice\DeviceNotificationEventArgs.cs" />
+    <Compile Include="MobileDevice\DeviceNotificationEventHandler.cs" />
+    <Compile Include="MobileDevice\DeviceRestoreNotificationCallback.cs" />
+    <Compile Include="MobileDevice\iPhone.cs" />
+    <Compile Include="MobileDevice\iPhoneDFUDevice.cs" />
+    <Compile Include="MobileDevice\iPhoneFile.cs" />
+    <Compile Include="MobileDevice\iPhoneRecoveryDevice.cs" />
+    <Compile Include="MobileDevice\KAMDError.cs" />
+    <Compile Include="MobileDevice\MobileDevice.cs" />
+    <Compile Include="MobileDevice\NotificationMessage.cs" />
+    <Compile Include="MobileDevice\t_sendCommandToDevice.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\usbmuxd.cs" />
+    <Compile Include="Helpers\Utils.cs" />
+    <EmbeddedResource Include="UI\HostsForm.resx">
+      <DependentUpon>HostsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apple.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\bin\Debug\HostsEditorOverUSB.exe.config
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\bin\Debug\HostsEditorOverUSB.exe
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\bin\Debug\HostsEditorOverUSB.pdb
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.Properties.Resources.resources
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.exe
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.pdb
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.MainForm.resources
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.HostsForm.resources
+C:\Users\Julian\Desktop\iPhone Projekt\HostsEditorOverUSB\HostsEditorOverUSB\obj\Debug\HostsEditorOverUSB.LoadingScreen.resources

@@ -1,0 +1,10 @@
++-+-+-+-+-+-+-+-+-+-+-+-+
+START LOG 21.11.2015 13:55:13
++-+-+-+-+-+-+-+-+-+-+-+-+
+This is an early beta version!
+Please connect your iOS-device via USB.
+Device connected (Callback 33156464)
+
++-+-+-+-+-+-+-+-+-+-+-+-+
+END LOG 21.11.2015 13:55:13
++-+-+-+-+-+-+-+-+-+-+-+-+
